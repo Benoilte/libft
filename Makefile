@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.07@hotmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/12 15:08:55 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/12 15:19:35 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,6 +66,7 @@ clean:
 
 fclean:
 	(cd libft; make fclean)
+	$(MAKE) cleanexe
 
 re:
 	(cd libft; make re)
