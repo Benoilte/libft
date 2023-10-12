@@ -1,6 +1,5 @@
 .DS_store
 a.out
 */a.out
-test*
 */*.o
 *.o
