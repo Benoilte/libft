@@ -6,14 +6,14 @@
 #    By: bebrandt <benoit.07@hotmail.com>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 17:15:49 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/12 09:28:47 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/12 10:35:30 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
 SRCS	=	ft_atoi.c \
-			ft_isalnum.c \
+			#ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
 			ft_isdigit.c \
