@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/13 11:01:28 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/13 14:21:15 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ all:
 
 compile: $(FCN).exe
 
-$(FCN).exe: $(LIBPATH)ft_$(FCN).c
+$(FCN).exe: $(LIBPATH)ft_$(FCN).c $(TESTPATH)test_$(FCN).c
 	$(MAKE) re
 	$(CC) $(CFLAGS) $(TESTPATH)test_$(FCN).c $(LIBPATH)$(LIBNAME) -o $@
 
