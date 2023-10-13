@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 13:24:10 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/13 13:48:55 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,6 @@ int	ft_atoi(char *str);
 int ft_isalnum(int c);
 int ft_isalpha(int c);
 int ft_isascii(int c);
+int ft_isdigit(int c);
 
 #endif
