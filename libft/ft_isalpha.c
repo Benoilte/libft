@@ -6,13 +6,13 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:25 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 12:02:59 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/13 13:23:14 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int x)
+int ft_isalpha(int c)
 {
-  if ((x >= 'A' && x <= 'Z') || (x >= 'a' && x <= 'z'))
+  if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
     return(1024);
   return (0);
 }
