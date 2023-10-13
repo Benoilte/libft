@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 12:00:26 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 12:00:51 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/13 13:29:49 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int main(int argc, char **argv)
   char alpha[62] = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
   int i;
 
+  i = 0;
   printf("General Check\n");
   printf("*************\n");
   while (alpha[i])
