@@ -13,8 +13,8 @@
 NAME	=	libft.a
 
 SRCS	=	ft_atoi.c \
-			#ft_isalnum.c \
-			ft_isalpha.c \
+			ft_isalnum.c \
+			#ft_isalpha.c \
 			ft_isascii.c \
 			ft_isdigit.c \
 			ft_isprint.c \
@@ -55,7 +55,7 @@ all:	${NAME}
 
 %.o:	%.c
 	${CC} ${CFLAGS} -c $< -o $@
-	
+
 ${NAME}:	${OBJS}
 	${AR} ${NAME} $^
 	${LIB} ${NAME}
