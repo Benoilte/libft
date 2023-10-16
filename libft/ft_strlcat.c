@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:41:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 17:24:28 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/16 17:33:56 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static long unsigned int	ft_count_char(char *str)
 {
 	long unsigned int	len;
-	
+
 	len = 0;
 	while (str[len])
 		len++;
@@ -33,10 +33,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst_len = ft_count_char(dst);
 	total_len = src_len + dst_len;
 	if (dstsize < ft_count_char(dst))
-	{
 		return (total_len - (dst_len - dstsize));
-	}
-	
 	i = 0;
 	while (dst[i])
 		i++;
@@ -47,6 +44,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		src++;
 	}
 	dst[i] = '\0';
-	
 	return (total_len);
 }
