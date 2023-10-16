@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 17:15:49 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/16 11:02:41 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/16 12:00:57 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,8 +22,8 @@ SRCS	=	ft_atoi.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
 			ft_strncmp.c \
-			#ft_strnstr.c \
-			ft_strrchr.c \
+			ft_strnstr.c \
+			#ft_strrchr.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_strlcpy.c \
