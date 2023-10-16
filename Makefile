@@ -6,11 +6,11 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/13 14:21:15 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/16 10:45:46 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-FCN =
+F =
 
 LIBPATH = libft/
 
@@ -27,11 +27,11 @@ TESTPATH = test_libft/
 all:
 	(cd libft; make all)
 
-compile: $(FCN).exe
+compile: $F.exe
 
-$(FCN).exe: $(LIBPATH)ft_$(FCN).c $(TESTPATH)test_$(FCN).c
+$F.exe: $(LIBPATH)ft_$F.c $(TESTPATH)test_$F.c
 	$(MAKE) re
-	$(CC) $(CFLAGS) $(TESTPATH)test_$(FCN).c $(LIBPATH)$(LIBNAME) -o $@
+	$(CC) $(CFLAGS) $(TESTPATH)test_$F.c $(LIBPATH)$(LIBNAME) -o $@
 
 cleanexe:
 	rm -rf *.exe
