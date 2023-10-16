@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 17:15:49 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/16 15:40:23 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/16 17:55:10 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,8 @@ SRCS	=	ft_atoi.c \
 			ft_tolower.c \
 			ft_toupper.c \
 			ft_strlcat.c \
-			#ft_memset.c \
-			ft_memcpy.c \
+			ft_memset.c \
+			#ft_memcpy.c \
 			ft_memmove.c \
 			ft_memcmp.c \
 			ft_memchr.c \
