@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 18:02:08 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 08:49:21 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t  ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 void 	*ft_memset(void *str, int c, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
 
 #endif
