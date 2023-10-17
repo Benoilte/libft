@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   test_atoi.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bebrandt <benoit.07@hotmail.com>           +#+  +:+       +#+        */
+/*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 10:41:16 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/12 11:55:32 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:29:58 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "../libft/libft.h"
 

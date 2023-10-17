@@ -6,11 +6,10 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 08:48:36 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 09:09:53 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:30:34 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <string.h>
 #include "../libft/libft.h"
 
