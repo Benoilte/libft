@@ -6,15 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:23:32 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 12:26:39 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:18:40 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-  if (c >= 0 && c <= 127)
-    return(1);
-  return (0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

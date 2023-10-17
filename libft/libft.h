@@ -6,33 +6,32 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 15:49:15 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:35:57 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-#include <stdio.h>
-// #include <stddef.h>
-#include <stdlib.h>
+# include	<stdio.h>
+# include	<stdlib.h>
 
-int	    ft_atoi(char *str);
-int     ft_isalnum(int c);
-int     ft_isalpha(int c);
-int     ft_isascii(int c);
-int     ft_isdigit(int c);
-int     ft_isprint(int c);
+int		ft_atoi(char *str);
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_strlen(char *str);
 int		ft_strncmp(const char *s1, const char *s2, long unsigned int n);
-char    *ft_strchr(const char *str, int c);
+char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-size_t  ft_strlcpy(char *dest, const char *src, size_t size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-void 	*ft_memset(void *str, int c, size_t n);
+void	*ft_memset(void *str, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
