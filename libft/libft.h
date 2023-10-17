@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 14:35:49 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 15:15:15 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #define LIBFT_H
 
 #include <stdio.h>
-#include <stddef.h>
+// #include <stddef.h>
+#include <stdlib.h>
 
 int	    ft_atoi(char *str);
 int     ft_isalnum(int c);
@@ -37,5 +38,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+char	*ft_strdup(const char *s1);
 
 #endif

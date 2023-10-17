@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/10 17:15:49 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/17 14:28:21 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/17 14:59:42 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,8 +33,8 @@ SRCS	=	ft_atoi.c \
 			ft_memcmp.c \
 			ft_memchr.c \
 			ft_bzero.c \
-			#ft_calloc.c \
-			ft_strdup.c
+			ft_strdup.c \
+			#ft_calloc.c
 
 OBJS	=	${SRCS:.c=.o}
 
