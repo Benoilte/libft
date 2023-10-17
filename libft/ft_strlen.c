@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 10:30:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 10:43:38 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:27:52 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

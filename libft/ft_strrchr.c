@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:59:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 14:16:51 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:28:06 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char  *ft_strrchr(const char *str, int c)
 {

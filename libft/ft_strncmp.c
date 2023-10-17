@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:08:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 11:54:13 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:27:57 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, long unsigned int n)
 {

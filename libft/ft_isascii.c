@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:23:32 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 13:30:52 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:26:39 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isascii(int c)
 {

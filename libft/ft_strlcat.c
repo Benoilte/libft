@@ -6,11 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:41:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 17:33:56 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:27:43 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static long unsigned int	ft_count_char(char *str)
 {

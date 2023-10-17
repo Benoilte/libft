@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:05:49 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 14:16:52 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:26:49 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isprint(int c)
 {

@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:44:28 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 14:45:07 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:28:16 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
