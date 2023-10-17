@@ -6,15 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:45:52 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 12:26:45 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:19:15 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-  if (c >= '0' && c <= '9')
-    return(2048);
-  return (0);
+	if (c >= '0' && c <= '9')
+		return (2048);
+	return (0);
 }

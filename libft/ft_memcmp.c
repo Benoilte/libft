@@ -6,13 +6,13 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:28:54 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 13:34:08 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:21:57 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int 	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	char	*str_s1;
 	char	*str_s2;

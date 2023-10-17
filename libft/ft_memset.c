@@ -6,13 +6,13 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 18:03:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 12:27:32 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:23:07 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void 	*ft_memset(void *str, int c, size_t n)
+void	*ft_memset(void *str, int c, size_t n)
 {
 	int		i;
 	char	*src;
