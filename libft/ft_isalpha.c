@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:25 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 13:23:14 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:26:34 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isalpha(int c)
 {

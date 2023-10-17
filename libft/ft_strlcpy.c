@@ -6,11 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:29:59 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 18:23:11 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:27:48 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t  ft_strlcpy(char *dest, const char *src, size_t size)
 {

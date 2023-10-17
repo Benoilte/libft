@@ -6,9 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:45:52 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/13 13:49:49 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:26:45 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_isdigit(int c)
 {

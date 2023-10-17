@@ -6,11 +6,11 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:11:27 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/16 13:14:50 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:28:02 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 static int	check_needle_occ(const char *s1, const char *needle)
 {

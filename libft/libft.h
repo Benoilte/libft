@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 10:47:26 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:27:07 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
+
+#include <stdio.h>
+#include <stddef.h>
 
 int	    ft_atoi(char *str);
 int     ft_isalnum(int c);
