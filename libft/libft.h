@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 18:42:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 14:02:14 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/17 14:35:49 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
 
 #endif
