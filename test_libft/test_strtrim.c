@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 19:39:33 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/18 19:56:25 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/18 21:33:14 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int	main(int argc, char **argv)
 	printf("  strtrim: %s\n", ft_strtrim("", ""));
 	if (argc == 3)
 	{
-		printf("string : %s --- set : %s\n", argv[1], argv[2]);
+		puts("-------- USER TEST ----------");
+		printf(" string : %s, set : %s\n", argv[1], argv[2]);
 		printf("strtrim : %s\n", ft_strtrim(argv[1], argv[2]));
 	}
 
