@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 10:30:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/18 14:22:28 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/18 18:08:10 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t ft_strlen(const char *s)
 	size_t	len;
 
 	len = 0;
-	while (str[len])
+	while (s[len])
 		len++;
 	return (len);
 }
