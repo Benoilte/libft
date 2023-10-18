@@ -6,13 +6,13 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 19:01:30 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/18 19:55:58 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/18 21:35:47 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// check if c is in set. if yes return 1 - in no return 0
+// check if 'c' char is in 'set' string. if yes return 1 - if no return 0
 // check_set('a', "dsa") ==> 1
 // check_set('h', "dsa") ==> 0
 static int	check_set(char c, char const *set)
@@ -29,6 +29,10 @@ static int	check_set(char c, char const *set)
 	return (0);
 }
 
+// Remove chars specified in 'set' string,
+// from the start AND the end of 's1' string
+// without removing the chars from the 'set' that are in the middle of 's1'
+// ft_strim("abbabaHello Worldabbbeeea", "abe") ==> "Hello World"
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	unsigned int	start;
