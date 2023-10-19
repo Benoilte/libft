@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/18 23:02:20 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/19 02:48:11 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,8 @@ F = ft_atoi \
 	ft_calloc \
 	ft_substr \
 	ft_strjoin \
-	ft_strtrim
+	ft_strtrim \
+	ft_split
 
 LIBPATH = libft/
 
@@ -52,7 +53,7 @@ TESTPATH = test_libft/test_
 all:
 	(cd libft; make all)
 
-compile: $F
+compile: all $F
 
 $F: %: $(LIBPATH)%.c $(TESTPATH)%.c $(LIBPATH)$(LIBNAME)
 	$(CC) $(CFLAGS) $(TESTPATH)$@.c $(LIBPATH)$(LIBNAME) -o $@
