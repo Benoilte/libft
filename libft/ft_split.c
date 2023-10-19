@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 23:12:59 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/19 03:20:59 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/19 03:57:28 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static void	ft_fill_strs(char **strs, char const *s, char c)
 			if (strs[i_str] == NULL)
 				ft_free_strs(strs, i_str);
 			i_str++;
-			start = end;
+			start = end - 1;
 		}
 		start++;
 	}
