@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/19 06:57:21 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/19 22:14:30 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,8 @@ F = ft_atoi \
 	ft_strtrim \
 	ft_split \
 	ft_itoa \
-	ft_strmapi
+	ft_strmapi \
+	ft_striteri
 
 LIBPATH = libft/
 
