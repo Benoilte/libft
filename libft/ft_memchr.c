@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:47:49 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 13:45:01 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:27:45 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *str, int c, size_t n)
 			return ((void *)(str + i));
 		i++;
 	}
-	return (0);
+	return ((void *)0);
 }

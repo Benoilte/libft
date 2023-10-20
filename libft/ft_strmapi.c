@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 07:00:26 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 14:58:53 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:30:37 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	s_len = ft_strlen(s);
 	str = (char *)ft_calloc((s_len + 1), sizeof(char));
 	if (!str)
-		return (0);
+		return ((void *)0);
 	i = 0;
 	while (s[i])
 	{

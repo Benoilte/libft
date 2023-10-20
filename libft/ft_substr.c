@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:00:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/19 02:22:22 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:25:13 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		dest = (char *)malloc((len + 1) * sizeof(char));
 		if (!dest)
-			return (NULL);
+			return ((void *)0);
 		while (s[i] && i < len)
 		{
 			dest[i] = s[i];

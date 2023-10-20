@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 23:12:59 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/19 03:57:28 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:29:02 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	**ft_split(char const *s, char c)
 	words = ft_count_word(s, c);
 	str_str = (char **)malloc((words + 1) * sizeof(char *));
 	if (!str_str)
-		return (0);
+		return ((void *)0);
 	ft_fill_strs(str_str, s, c);
 	return (str_str);
 }
@@ -73,7 +73,7 @@ static void	ft_fill_strs(char **strs, char const *s, char c)
 			while (s[end] != c && s[end] != '\0')
 				end++;
 			strs[i_str] = ft_substr(s, start, end - start);
-			if (strs[i_str] == NULL)
+			if (strs[i_str] == (void *)0)
 				ft_free_strs(strs, i_str);
 			i_str++;
 			start = end - 1;

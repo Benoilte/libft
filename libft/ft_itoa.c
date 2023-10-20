@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 04:48:40 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 14:54:58 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:26:59 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static char	*ft_fill_num_str(int n, int is_neg)
 	}
 	str = ft_calloc((str_len + 1), sizeof(char));
 	if (!str)
-		return (0);
+		return ((void *)0);
 	str[str_len] = '\0';
 	while (n2)
 	{
