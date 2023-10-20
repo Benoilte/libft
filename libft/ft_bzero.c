@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:35:22 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:11:59 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 15:44:56 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *)s;
 	while (n)
 	{
-		*(char *)s = '\0';
-		s++;
+		*tmp_ptr++ = 0;
 		n--;
 	}	
 }
