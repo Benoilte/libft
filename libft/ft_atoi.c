@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 11:39:47 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 13:11:35 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:01:45 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	check_isspace(char c);
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	num;
 	int	sign;
