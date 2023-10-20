@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:28:54 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:21:57 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:46:47 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	char	*str_s1;
-	char	*str_s2;
+	unsigned char	*str1;
+	unsigned char	*str2;
+	size_t			i;
 
-	str_s1 = (char *)s1;
-	str_s2 = (char *)s2;
-	while (*str_s1 && *str_s2 && *str_s1 == *str_s2 && (n - 1))
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
+	i = 0;
+	while (i < n)
 	{
-		str_s1++;
-		str_s2++;
-		n--;
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
 	}
-	return (*str_s1 - *str_s2);
+	return (0);
 }
