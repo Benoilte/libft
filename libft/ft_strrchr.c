@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 13:59:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:30:16 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 14:04:07 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,18 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int	len;
+	int		i;
+	char	*occ;
 
-	len = 0;
-	while (str[len])
-		len++;
-	if (!c)
-		return ((char *)(str + len));
-	len--;
-	while (len >= 0)
+	i = 0;
+	occ = (void *)0;
+	while (str[i])
 	{
-		if (str[len] == c)
-			return ((char *)(str + len));
-		len--;
+		if ((unsigned char) str[i] == (unsigned char) c)
+			occ = ((char *)(str + i));
+		i++;
 	}
-	return (0);
+	if ((unsigned char) str[i] == (unsigned char) c)
+		occ = ((char *)(str + i));
+	return (occ);
 }

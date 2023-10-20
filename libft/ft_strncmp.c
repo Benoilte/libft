@@ -6,19 +6,24 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:08:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:37:40 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 11:20:56 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// compare two string for maximum n chars.
+// return 0 if they are the same or the 'chars' difference of s1 - s2
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s1 && *s2 && *s1 == *s2 && (n - 1))
+	size_t	i;
+
+	i = 0;
+	while ((s1[i] || s2[i]) && i < n)
 	{
-		s1++;
-		s2++;
-		n--;
+		if ((unsigned char) s1[i] != (unsigned char) s2[i])
+			return ((unsigned char) s1[i] - (unsigned char) s2[i]);
+		i++;
 	}
-	return (*s1 - *s2);
+	return (0);
 }

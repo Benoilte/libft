@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 12:11:27 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:28:54 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:32:20 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		haystack++;
 		len--;
 	}
-	return (0);
+	return ((void *)0);
 }

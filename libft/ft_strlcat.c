@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:41:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:44:35 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 12:55:13 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,23 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	long unsigned int	src_len;
-	long unsigned int	dst_len;
-	long unsigned int	total_len;
-	long unsigned int	i;
+	size_t	src_len;
+	size_t	dst_len;
+	size_t	total_len;
 
-	src_len = ft_strlen((char *)src);
+	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	total_len = src_len + dst_len;
-	if (dstsize < (long unsigned int)ft_strlen(dst))
-		return (total_len - (dst_len - dstsize));
-	i = 0;
-	while (dst[i])
-		i++;
-	while (*src && (dstsize - 1) != i)
+	if (dst_len == dstsize)
+		return (total_len);
+	if (dstsize < dst_len)
+		return (src_len + dstsize);
+	if (src_len < dstsize - dst_len)
+		ft_memcpy(dst + dst_len, src, src_len + 1);
+	else
 	{
-		dst[i] = *src;
-		i++;
-		src++;
+		ft_memcpy(dst + dst_len, src, dstsize - dst_len - 1);
+		dst[dstsize - 1] = '\0';
 	}
-	dst[i] = '\0';
 	return (total_len);
 }

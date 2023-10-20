@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 15:14:20 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 15:37:21 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:26:08 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s1)
 
 	dest = (char *)malloc((ft_strlen((char *)s1) + 1) * sizeof(char));
 	if (!dest)
-		return (0);
+		return ((void *)0);
 	i = 0;
 	while (s1[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 15:48:36 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:12:16 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 16:27:21 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*mem;
+	unsigned char	*mem;
+	size_t			i;
 
-	mem = (void *)malloc(count * size);
+	mem = malloc(count * size);
 	if (!mem)
-		return (0);
-	ft_bzero(mem, size);
+		return ((void *)0);
+	i = 0;
+	while (i < count * size)
+		mem[i++] = 0;
 	return (mem);
 }
