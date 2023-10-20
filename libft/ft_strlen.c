@@ -6,13 +6,13 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 10:30:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/18 18:08:10 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 10:14:29 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 

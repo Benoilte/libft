@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 04:48:40 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/19 06:09:43 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 10:13:04 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static char	*ft_fill_num_str(int n, int is_neg);
 
 // convert integer 'n' in its representative string NUL-terminated
 // ft_itoa(42) => "42" | ft_itoa(-42) => "-42"
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*str_num;
 	int		is_neg;
