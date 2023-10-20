@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:46:19 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 12:27:28 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/20 15:33:25 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char					*str_dst;
-	char					*str_src;
-	long unsigned int		i;
+	unsigned char					*str_dst;
+	unsigned char					*str_src;
+	long unsigned int				i;
 
-	str_dst = (char *)dst;
-	str_src = (char *)src;
+	if (dst == (void *)0 && src == (void *)0)
+		return (dst);
+	str_dst = (unsigned char *)dst;
+	str_src = (unsigned char *)src;
 	if (dst > src)
 	{
 		while (len > 0)
@@ -27,15 +29,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			str_dst[len - 1] = str_src[len - 1];
 			len--;
 		}
+		return (dst);
 	}
-	else
+	i = 0;
+	while (i < len)
 	{
-		i = 0;
-		while (i < len)
-		{
-			str_dst[i] = str_src[i];
-			i++;
-		}
+		str_dst[i] = str_src[i];
+		i++;
 	}
 	return (dst);
 }
