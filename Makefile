@@ -6,44 +6,19 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/20 09:13:04 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/21 14:24:26 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-F = ft_atoi \
-	ft_isalnum \
-	ft_isalpha \
-	ft_isascii \
-	ft_isdigit \
-	ft_isprint \
-	ft_strchr \
-	ft_strlcpy \
-	ft_strlen \
-	ft_strncmp \
-	ft_strnstr \
-	ft_strrchr \
-	ft_tolower \
-	ft_toupper \
-	ft_strlcat \
-	ft_memset \
-	ft_memcpy \
-	ft_memmove \
-	ft_memcmp \
-	ft_memchr \
-	ft_bzero \
-	ft_strdup \
-	ft_calloc \
-	ft_substr \
-	ft_strjoin \
-	ft_strtrim \
-	ft_split \
-	ft_itoa \
-	ft_strmapi \
-	ft_striteri \
-	ft_putchar_fd \
-	ft_putstr_fd \
-	ft_putendl_fd \
-	ft_putnbr_fd
+F = ft_atoi ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_strchr \
+	ft_strlcpy ft_strlen ft_strncmp ft_strnstr ft_strrchr ft_tolower \
+	ft_toupper ft_strlcat ft_memset ft_memcpy ft_memmove ft_memcmp ft_memchr \
+	ft_bzero ft_strdup ft_calloc ft_substr ft_strjoin ft_strtrim ft_split \
+	ft_itoa ft_strmapi ft_striteri ft_putchar_fd ft_putstr_fd ft_putendl_fd \
+	ft_putnbr_fd ft_lstnew_bonus \
+	#ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
+	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 LIBPATH = libft/
 
@@ -55,18 +30,21 @@ CFLAGS = -Wall -Wextra -Werror
 
 TESTPATH = test_libft/test_
 
-.PHONY: all compile compileall cleanexe clean fclean re
+.PHONY: all compile bonus cleanexe clean fclean re
 
 all:
 	(cd libft; make all)
 
-compile: all $F
+compile: bonus $F
 
 $F: %: $(LIBPATH)%.c $(TESTPATH)%.c $(LIBPATH)$(LIBNAME)
 	$(CC) $(CFLAGS) $(TESTPATH)$@.c $(LIBPATH)$(LIBNAME) -o $@
 
 $(LIBPATH)$(LIBNAME):
 	(cd libft; make all)
+
+bonus:
+	(cd libft; make bonus)
 
 cleanexe:
 	rm -rf ft_*
@@ -79,4 +57,4 @@ fclean:
 	$(MAKE) cleanexe
 
 re:
-	(cd libft; make re)
+	(cd libft; make re bonus)
