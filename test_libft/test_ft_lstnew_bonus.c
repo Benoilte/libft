@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 14:52:06 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/21 15:21:53 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/21 17:20:26 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,4 @@ int	main(void)
 	content = 42;
 	node = ft_lstnew(&content);
 	printf("content: %p, next: %p\n", node->content, node->next);
-
 }
