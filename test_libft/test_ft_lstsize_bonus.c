@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_lstadd_front_bonus.c                       :+:      :+:    :+:   */
+/*   test_ft_lstsize_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 15:38:23 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/22 11:24:01 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/22 10:28:28 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/10/22 11:34:39 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,19 @@ int	main(void)
 {
 	t_list	*root = NULL;
 
+	puts("-------- TEST 0 ----------");
+	printf(" Expected : 0\n");
+	printf("ft_lstsize: %d\n", ft_lstsize(root));
 	puts("-------- TEST 1 ----------");
 	ft_lstadd_front(&root, ft_lstnew((int *)42));
-	printf("              root_ptr: %p\n", root);
+	printf(" Expected : 1\n");
+	printf("ft_lstsize: %d\n", ft_lstsize(root));
 	puts("-------- TEST 2 ----------");
 	ft_lstadd_front(&root, ft_lstnew((int *)52));
-	printf("              root_ptr: %p\n", root);
+	printf(" Expected : 2\n");
+	printf("ft_lstsize: %d\n", ft_lstsize(root));
 	puts("-------- TEST 3 ----------");
 	ft_lstadd_front(&root, ft_lstnew((int *)62));
-	printf("              root_ptr: %p\n", root);
-	puts("-------- TEST link ----------");
-	printf("                  root: %p\n", root);
-	printf("            root->next: %p\n", root->next);
-	printf("      root->next->next: %p\n", root->next->next);
-	printf("root->next->next->next: %p\n", root->next->next->next);
+	printf(" Expected : 3\n");
+	printf("ft_lstsize: %d\n", ft_lstsize(root));
 }
