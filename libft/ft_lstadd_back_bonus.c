@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 21:24:28 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/22 22:19:18 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:51:56 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 	else
 		last->next = new;
-	new->next = (void *)0;
 }
