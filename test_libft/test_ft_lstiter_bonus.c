@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:10:10 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/23 15:39:37 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:09:36 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,12 @@ int	main(void)
 		tmp = tmp->next;
 	}
 	ft_lstiter(root, &ft_print_content);
+	// tmp = root;
+	// while (tmp)
+	// {
+	// 	printf("content value: %d\n", (int)tmp->content);
+	// 	tmp = tmp->next;
+	// }
 }
 
 void	ft_print_content(void *n)
