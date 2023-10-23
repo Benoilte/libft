@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/10/23 13:56:46 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/10/23 15:46:37 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ F = ft_atoi ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_strchr \
 	ft_itoa ft_strmapi ft_striteri ft_putchar_fd ft_putstr_fd ft_putendl_fd \
 	ft_putnbr_fd ft_lstnew_bonus ft_lstadd_front_bonus ft_lstsize_bonus \
 	ft_lstlast_bonus ft_lstadd_back_bonus ft_lstdelone_bonus \
-	ft_lstclear_bonus ft_lstiter_bonus #ft_lstmap_bonus
+	ft_lstclear_bonus ft_lstiter_bonus ft_lstmap_bonus
 
 LIBPATH = libft/
 
