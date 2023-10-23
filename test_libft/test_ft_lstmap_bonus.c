@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_lstiter_bonus.c                            :+:      :+:    :+:   */
+/*   test_ft_lstmap_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 14:10:10 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/23 16:09:36 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/23 15:47:39 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/10/23 16:24:38 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft/libft.h"
 
-void	ft_print_content(void *n);
+void	*ft_add_two(void *n);
+void	del(void *content);
 
 int	main(void)
 {
@@ -24,23 +25,29 @@ int	main(void)
 	ft_lstadd_back(&root, ft_lstnew((int *)62));
 	ft_lstadd_back(&root, ft_lstnew((int *)72));
 	ft_lstadd_back(&root, ft_lstnew((int *)82));
-	puts("------- VALUE BEFORE LSTITER --------");
+	puts("------- VALUE BEFORE LSTMAP --------");
 	tmp = root;
 	while (tmp)
 	{
 		printf("content value: %d\n", (int)tmp->content);
 		tmp = tmp->next;
 	}
-	ft_lstiter(root, &ft_print_content);
-	// tmp = root;
-	// while (tmp)
-	// {
-	// 	printf("content value: %d\n", (int)tmp->content);
-	// 	tmp = tmp->next;
-	// }
+	tmp = ft_lstmap(root, &ft_add_two, &del);
+	puts("------- VALUE AFTER LSTMAP --------");
+	while (tmp)
+	{
+		printf("content value: %d\n", (int)tmp->content);
+		tmp = tmp->next;
+	}
 }
 
-void	ft_print_content(void *n)
+void	*ft_add_two(void *n)
 {
-	printf("content : %d\n", (int)n);
+	n += 2;
+	return (n);
+}
+
+void	del(void *content)
+{
+	content = (void *)0;
 }
