@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 10:28:20 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/22 11:32:18 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:46:35 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 'lst' should be the first element of the list*/
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
-	t_list *el_lst;
+	int		i;
+	t_list	*el_lst;
 
 	i = 0;
 	el_lst = lst;

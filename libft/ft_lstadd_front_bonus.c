@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 15:36:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/21 17:02:09 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/23 16:41:07 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ de la liste.
 new: L’adresse du pointeur vers l’élément à
 rajouter à la liste.
 */
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
