@@ -6,12 +6,17 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:29:59 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:27:50 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:15:48 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+copies up to dstsize - 1 characters from the string src to dst.
+return the total length of the strings it tried to create.
+If the return value is >= dstsize, the output string has been truncated.
+*/
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	long unsigned int	i;

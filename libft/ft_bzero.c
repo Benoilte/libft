@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 14:35:22 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 15:44:56 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:31:27 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Writes 'n' zeroed bytes to the string 's'
+*/
 void	ft_bzero(void *s, size_t n)
 {
 	char	*tmp_ptr;

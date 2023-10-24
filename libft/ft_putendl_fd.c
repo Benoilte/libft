@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 09:27:18 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 10:14:06 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:35:27 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Writes the string 's', followed by a newline, on the file descriptor 'fd'
+*/
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

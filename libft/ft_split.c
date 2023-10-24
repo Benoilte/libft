@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 23:12:59 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:29:02 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:40:30 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@ static int	ft_count_word(char const *s, char c);
 static void	ft_fill_strs(char **strs, char const *s, char c);
 static void	ft_free_strs(char **strs, int len);
 
-// split 's' string according 'c' delimiter. allocate memory needed.
-// free memory in case of NULL allocation of a words.
-// ft_split("fffHellofffWorldffff", 'f') ==> [["Hello"], ["World"]]
+/*
+Split 's' string according 'c' delimiter. allocate memory needed.
+free memory in case of NULL allocation of a words.
+ft_split("fffHellofffWorldffff", 'f') ==> [["Hello"], ["World"]]
+*/
 char	**ft_split(char const *s, char c)
 {
 	int		words;
@@ -32,9 +34,11 @@ char	**ft_split(char const *s, char c)
 	return (str_str);
 }
 
-// count word in 's' string according to 'c' delimiter
-// if several delimiter next to each other, count only word.
-//ft_count_word("uuuhellouuuuworlduuu", 'u') ==> 2
+/*
+Count word in 's' string according to 'c' delimiter
+if several delimiter next to each other, count only word.
+ft_count_word("uuuhellouuuuworlduuu", 'u') ==> 2
+*/
 static int	ft_count_word(char const *s, char c)
 {
 	int	i;
@@ -55,8 +59,10 @@ static int	ft_count_word(char const *s, char c)
 	return (words);
 }
 
-// fill 'strs' tab with words from 's' delimited by 'c'
-// ft_fill_strs(allocate_strs, "fhelloffworldff", f) => [[hello], [world], [0]]
+/*
+Fill 'strs' tab with words from 's' delimited by 'c'
+ft_fill_strs(allocate_strs, "fhelloffworldff", f) => [[hello], [world], [0]]
+*/
 static void	ft_fill_strs(char **strs, char const *s, char c)
 {
 	int	start;
@@ -83,8 +89,10 @@ static void	ft_fill_strs(char **strs, char const *s, char c)
 	strs[i_str] = 0;
 }
 
-// if allocation memory problem occurs in the middle of strs tab.
-// ft_free_strs free all previous memory allocated in tab + free the tab.
+/*
+If allocation memory problem occurs in the middle of strs tab.
+ft_free_strs free all previous memory allocated in tab + free the tab.
+*/
 static void	ft_free_strs(char **strs, int len)
 {
 	int	i;

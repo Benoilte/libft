@@ -6,17 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 15:36:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/23 16:41:07 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:33:51 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*Ajoute l’élément ’new’ au début de la liste.
-lst: L’adresse du pointeur vers le premier élément
-de la liste.
-new: L’adresse du pointeur vers l’élément à
-rajouter à la liste.
+/*
+Add new elem. at the beginning of the list and set new->next 
+to the previous first elem. re-define the ptr of the new first elem.
 */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

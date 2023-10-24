@@ -6,12 +6,16 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:28:54 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 13:46:47 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:47 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Returns zero if the two strings are identical, otherwise returns 
+the difference between the first two differing bytes => 'str1[i]' - 'str2[i]'
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;

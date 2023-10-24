@@ -6,20 +6,23 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 11:39:47 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:01:45 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:39:46 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	check_isspace(char c);
+static int	ft_check_isspace(char c);
 
+/*
+Return the string in params in a corresponding int
+*/
 int	ft_atoi(const char *str)
 {
 	int	num;
 	int	sign;
 
-	while (check_isspace(*str))
+	while (ft_check_isspace(*str))
 		str++;
 	sign = 1;
 	if (*str == '+' || *str == '-')
@@ -37,7 +40,7 @@ int	ft_atoi(const char *str)
 	return (num *= sign);
 }
 
-static int	check_isspace(char c)
+static int	ft_check_isspace(char c)
 {
 	int		i;
 	char	*set;

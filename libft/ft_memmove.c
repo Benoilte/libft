@@ -6,12 +6,16 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:46:19 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 15:33:25 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:58 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Copies 'len' bytes from string src to string dst. The two strings may overlap; 
+the copy is always done in a non-destructive manner. Return dst
+*/
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char					*str_dst;

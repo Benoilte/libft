@@ -6,12 +6,16 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 14:18:20 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:30:11 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:37:39 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Allocate and returns a new string resulting from the concatenation 
+of s1 and s2. returns the new string; NULL if the memory allocation failed.
+*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*dest;
