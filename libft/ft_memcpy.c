@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 08:45:54 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 15:22:21 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:52 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+copies n bytes from memory area src to memory area dst. Return dst
+*/
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char					*str_dst;

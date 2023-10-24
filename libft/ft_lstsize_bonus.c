@@ -6,14 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 10:28:20 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/23 16:46:35 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:31 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* count number of element of the linked list and return the value.
-'lst' should be the first element of the list*/
+/*
+Count number of element of the linked list and return the value.
+*/
 int	ft_lstsize(t_list *lst)
 {
 	int		i;

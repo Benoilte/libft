@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 18:03:45 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:09:37 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:35:04 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Writes len bytes of value 'c'. return 'str'
+*/
 void	*ft_memset(void *str, int c, size_t n)
 {
 	int				i;

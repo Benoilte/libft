@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 04:48:40 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:26:59 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:01 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 static char	*ft_fill_num_str(int n, int is_neg);
 
-// convert integer 'n' in its representative string NUL-terminated
-// ft_itoa(42) => "42" | ft_itoa(-42) => "-42"
+/*
+Convert integer 'n' in its representative string NUL-terminated
+ft_itoa(42) => "42" | ft_itoa(-42) => "-42"
+*/
 char	*ft_itoa(int n)
 {
 	char	*str_num;
@@ -42,9 +44,11 @@ char	*ft_itoa(int n)
 	return (str_num);
 }
 
-// fill a string representing the int 'n' - allocate properly the memory
-// n is always positive, is_neg == 0 if n was positive or 1 if n was negative
-// ft_fill_num_str(42, 0) => "42" | ft_fill_num_str(42, 1) => "-42"
+/*
+Fill a string representing the int 'n' - allocate properly the memory
+n is always positive, is_neg == 0 if n was positive or 1 if n was negative
+ft_fill_num_str(42, 0) => "42" | ft_fill_num_str(42, 1) => "-42"
+*/
 static char	*ft_fill_num_str(int n, int is_neg)
 {
 	char	*str;

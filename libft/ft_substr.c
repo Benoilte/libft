@@ -6,12 +6,17 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 10:00:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:25:13 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:28:44 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Allocate and return a new string from the string 's'.
+This new string starts at index 'start' and has a maximum size of 'len'.
+NULL is returned if the memory allocation failed.
+*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	unsigned int	i;

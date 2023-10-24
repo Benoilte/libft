@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 10:44:19 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:17:15 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:39:53 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Return non-zero value if 'c' is in 0-9 || a-z || A-Z
+*/
 int	ft_isalnum(int c)
 {
 	if ((c >= '0' && c <= '9')

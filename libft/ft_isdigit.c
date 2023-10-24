@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 13:45:52 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/17 16:19:15 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:32:08 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Return non-zero value if 'c' is in 0-9
+*/
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

@@ -6,12 +6,16 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:47:49 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:27:45 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:34:37 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Locates the first occurence of c in 'str' and return its address
+return NULL if no occurence found
+*/
 void	*ft_memchr(const void *str, int c, size_t n)
 {
 	unsigned char			*char_str;

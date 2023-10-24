@@ -6,16 +6,18 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 07:00:26 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 16:30:37 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:38:12 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// second argument is a pointer on a function, it return a 'char' and
-// take 2 arguments 'unsigned int' and a 'char'.
-// ft_strmapi return a copy of a string 's' with the resulting
-// of function 'f' on each 'char'.
+/*
+Second argument is a pointer on a function, it return a 'char' and
+take 2 arguments 'unsigned int' and a 'char'.
+ft_strmapi return a copy of a string 's' with the resulting
+of function 'f' on each 'char'.
+*/
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	int		s_len;

@@ -6,12 +6,17 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 15:41:12 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 12:55:13 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:37:44 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Appends string src to the end of dst.
+return the total length of the string it tried to create.
+If the return value is >= dstsize, the output string has been truncated.
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	src_len;

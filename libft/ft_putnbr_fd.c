@@ -6,12 +6,15 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 09:26:30 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/20 15:07:25 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/10/24 10:35:35 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+Writes the int 'n' on the file descriptor 'fd'
+*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
