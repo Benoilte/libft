@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/22 21:24:28 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:33:56 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/23 11:55:44 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:54:38 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Add new elem. at the end of the list and set new->next as null
-set new elem. as first elem. of the list if '*lst' is null.
+Deletes and free the memory of the element passed as parameter
+and all the following elements
 */
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*last;
+	t_list	*next_el;
 
-	if (!lst || !new)
+	if (!lst)
 		return ;
-	last = ft_lstlast(*lst);
-	if (!*lst)
-		*lst = new;
-	else
-		last->next = new;
+	while (*lst)
+	{
+		next_el = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = next_el;
+	}
+	free(*lst);
+	*lst = (void *)0;
 }

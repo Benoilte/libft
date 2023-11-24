@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/22 10:28:20 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:34:31 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/22 21:24:28 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:54:12 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Count number of element of the linked list and return the value.
+Add new elem. at the end of the list and set new->next as null
+set new elem. as first elem. of the list if '*lst' is null.
 */
-int	ft_lstsize(t_list *lst)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	int		i;
-	t_list	*el_lst;
+	t_list	*last;
 
-	i = 0;
-	el_lst = lst;
-	while (el_lst)
-	{
-		el_lst = el_lst->next;
-		i++;
-	}
-	return (i);
+	if (!lst || !new)
+		return ;
+	last = ft_lstlast(*lst);
+	if (!*lst)
+		*lst = new;
+	else
+		last->next = new;
 }

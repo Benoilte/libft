@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 11:55:44 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:33:21 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/22 10:28:20 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:55:54 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Deletes and free the memory of the element passed as parameter 
-and all the following elements
+Count number of element of the linked list and return the value.
 */
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*next_el;
+	int		i;
+	t_list	*el_lst;
 
-	if (!lst)
-		return ;
-	while (*lst)
+	i = 0;
+	el_lst = lst;
+	while (el_lst)
 	{
-		next_el = (*lst)->next;
-		ft_lstdelone(*lst, del);
-		*lst = next_el;
+		el_lst = el_lst->next;
+		i++;
 	}
-	free(*lst);
-	*lst = (void *)0;
+	return (i);
 }

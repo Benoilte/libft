@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/22 21:01:25 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:33:39 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/23 08:44:59 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:54:47 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Return the pointer of last element of the linked list.
- */
-t_list	*ft_lstlast(t_list *lst)
+Use del function to delete element's content and free lst memory
+*/
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	t_list	*el_lst;
-
 	if (!lst)
-		return ((void *)0);
-	el_lst = lst;
-	while (el_lst->next)
-		el_lst = el_lst->next;
-	return (el_lst);
+		return ;
+	del(lst->content);
+	free(lst);
 }

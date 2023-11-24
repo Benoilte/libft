@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/23 13:57:44 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:33:30 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/21 15:36:53 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:54:25 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Iterates over the whole list and applies the function f to the content 
-of each elements.
+Add new elem. at the beginning of the list and set new->next
+to the previous first elem. re-define the ptr of the new first elem.
 */
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*el_lst;
-
-	if (!f)
+	if (!lst || !new)
 		return ;
-	el_lst = lst;
-	while (el_lst)
-	{
-		f(el_lst->content);
-		el_lst = el_lst->next;
-	}
+	new->next = *lst;
+	*lst = new;
 }

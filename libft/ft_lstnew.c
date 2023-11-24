@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 15:36:53 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:33:51 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/21 14:42:40 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:55:45 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Add new elem. at the beginning of the list and set new->next 
-to the previous first elem. re-define the ptr of the new first elem.
+Create a new t_list struct with malloc. assign var member content with
+params 'content' and assign var member next to NULL
 */
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstnew(void *content)
 {
-	if (!lst || !new)
-		return ;
-	new->next = *lst;
-	*lst = new;
+	t_list	*new;
+
+	new = (t_list *)malloc(sizeof(t_list));
+	if (!new)
+		return ((void *)0);
+	new->content = content;
+	new->next = (void *)0;
+	return (new);
 }

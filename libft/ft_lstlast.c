@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 14:42:40 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/10/24 10:34:23 by bebrandt         ###   ########.fr       */
+/*   Created: 2023/10/22 21:01:25 by bebrandt          #+#    #+#             */
+/*   Updated: 2023/11/24 17:55:21 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-Create a new t_list struct with malloc. assign var member content with
-params 'content' and assign var member next to NULL
-*/
-t_list	*ft_lstnew(void *content)
+Return the pointer of last element of the linked list.
+ */
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*new;
+	t_list	*el_lst;
 
-	new = (t_list *)malloc(sizeof(t_list));
-	if (!new)
+	if (!lst)
 		return ((void *)0);
-	new->content = content;
-	new->next = (void *)0;
-	return (new);
+	el_lst = lst;
+	while (el_lst->next)
+		el_lst = el_lst->next;
+	return (el_lst);
 }
