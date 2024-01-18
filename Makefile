@@ -6,7 +6,7 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/12 09:29:55 by bebrandt          #+#    #+#              #
-#    Updated: 2023/11/24 18:03:40 by bebrandt         ###   ########.fr        #
+#    Updated: 2024/01/18 11:20:20 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ TESTPATH = test_libft/test_
 
 all:
 	(cd libft; make all)
+	$(MAKE) compile
 
 compile: bonus $F
 
