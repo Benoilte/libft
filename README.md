@@ -12,10 +12,22 @@ I create a test_libft folder to check all of my libft function individually.
 <br>
 Do the following command on the root of the project to compile functions:
 <br><br> 
-``make`` :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;compile all programs in test_libft folder
-<br>
-``make ./(ft_nameOfTheFunction)`` :&emsp;&emsp;&emsp; compile only the function you give as argument
+compile all libft functions with the following command:
 
-after compiling you can launch the program with the following command:&emsp;&emsp;``./ft_nameOfTheFunction``
+```bash
+make
+```
+
+Compile only one libft function with the following command (replace nameOfTheFunction by the name of the function you want to compile):
+
+```bash
+make ft_nameOfTheFunction
+```
+
+after compiling you can launch the program with the following command(replace nameOfTheFunction by the name of the function you want to compile):
+
+```bash
+./ft_nameOfTheFunction
+```
 <br>
 Give the argument needed to test it correctly (check which argument is needed in the code)
